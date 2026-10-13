@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Каталог — Fairline</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="catalog">
+<div id="site-header"></div>
+<main>
+<div class="wrap">
+  <nav class="crumbs" id="crumbs" aria-label="Навігація"></nav>
+  <div id="cat-head"></div>
+  <div class="subcats" id="subcats"></div>
+  <div class="catalog">
+    <aside class="filters" id="filters" aria-label="Фільтри"></aside>
+    <section>
+      <div class="toolbar">
+        <span id="found" aria-live="polite"></span>
+        <span style="display:flex;gap:8px">
+          <button class="btn btn--ghost filters-open" id="fopen">Фільтри</button>
+          <label class="vh" for="sort">Сортування</label>
+          <select id="sort"><option value="pop">Спочатку популярні</option><option value="cheap">Спочатку дешевші</option><option value="dear">Спочатку дорожчі</option></select>
+        </span>
+      </div>
+      <div class="chips" id="chips"></div>
+      <div id="list"></div>
+    </section>
+  </div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="assets/data.js"></script>
+<script src="assets/app.js"></script>
+
+</body>
+</html>
